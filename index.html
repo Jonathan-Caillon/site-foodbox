@@ -3,9 +3,406 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <title>La FoodBox</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">FoodBox</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Image d'acceuil -->
+
+    <section>
+        <div class="accueil">
+            <p>Bienvenue chez la FoodBox</p>
+        </div>
+        <div class="middle">
+            <div class="mouse">
+          
+            </div>
+          </div>
+    </section>
+
+        <!-- Section Présentation -->
+
+    <section class="presentation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 preimage">
+                    <img src="./images/accueil.jpg" alt="">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="texte">
+                        <div>
+                            <h1>Our chef cooks the most delicious food for you</h1>
+                            <p>
+                                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                                <br><br>
+                                A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Menu -->
+
+    <section class="menu">
+        <div class="container">
+            <h1>Discover Our Exclusive Menu</h1>
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-entrees-tab" data-bs-toggle="pill" data-bs-target="#pills-entrees" type="button" role="tab" aria-controls="pills-entrees" aria-selected="true">Entrées</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-pates-tab" data-bs-toggle="pill" data-bs-target="#pills-pates" type="button" role="tab" aria-controls="pills-pates" aria-selected="false">Pâtes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-specialites-tab" data-bs-toggle="pill" data-bs-target="#pills-specialites" type="button" role="tab" aria-controls="pills-specialites" aria-selected="false">Spécialités</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-sandwich-tab" data-bs-toggle="pill" data-bs-target="#pills-sandwich" type="button" role="tab" aria-controls="pills-sandwich" aria-selected="false">Sandwich</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-dessert-tab" data-bs-toggle="pill" data-bs-target="#pills-dessert" type="button" role="tab" aria-controls="pills-dessert" aria-selected="false">Désserts</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+
+                <!-- Menu entrées -->
+
+                <div class="tab-pane fade show active" id="pills-entrees" role="tabpanel" aria-labelledby="pills-entrees-tab">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Salade maison</h2>
+                                    <p>
+                                        Au gré du jours...
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>5€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Big brick</h2>
+                                    <p>
+                                        Accompagnée d'une salade
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>6,50€</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu pâtes -->
+
+                <div class="tab-pane fade" id="pills-pates" role="tabpanel" aria-labelledby="pills-pates-tab">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Bolognaise</h2>
+                                    <p>
+                                        Haché de boeuf, tomate, oignon, basilic
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>8,50€</p>
+                                </div>
+                            </div>
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>La Fermière</h2>
+                                    <p>
+                                        Poulet, crème fraîche, oignon, champignon
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>8,50€</p>
+                                </div>
+                            </div>
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>La Végétarienne</h2>
+                                    <p>
+                                        Au gré des saisons
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>8,50€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Sauce Bleu</h2>
+                                    <p>
+                                        Crème fraîche, bleu
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>8,50€</p>
+                                </div>
+                            </div>
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Le Thonno</h2>
+                                    <p>
+                                        Thon, sauce tomate, oignon, olive
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>8,50€</p>
+                                </div>
+                            </div>
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>La Pesto</h2>
+                                    <p>
+                                        Oignon, basilic, huilde d'olive
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>8,50€</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu spécialitées -->
+
+                <div class="tab-pane fade" id="pills-specialites" role="tabpanel" aria-labelledby="pills-specialites-tab">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Couscous</h2>
+                                    <p>
+                                        Poulet ou Agneau ou Boeuf
+                                        <br>
+                                        <span>Supplément viande 2€</span>
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>13€</p>
+                                </div>
+                            </div>
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Chorba</h2>
+                                    <p>
+                                        Accompagnée de son pain maison ou brick
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>13€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Tajine</h2>
+                                    <p>
+                                        Veau ou Poulet ou Agneau <br>+ Accompagnement riz ou Pomme de terre ou Semoule
+                                        <br>
+                                        <span>Supplément viande 2€</span>
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>13€</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu sandwich -->
+
+                <div class="tab-pane fade" id="pills-sandwich" role="tabpanel" aria-labelledby="pills-sandwich-tab">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Fricassé</h2>
+                                    <p>
+                                        Thon, pomme de terre, olive verte, fromage
+                                        <br>
+                                        ou Viande hachée, fromage, salade
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>5€</p>
+                                </div>
+                            </div>
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Cheeseburger</h2>
+                                    <p>
+                                        (sauces au choix)
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>4,50€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Panini</h2>
+                                    <p>
+                                        Fromage ou poulet ou steak
+                                        <br>
+                                        (sauces au choix)
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>5€</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Désserts -->
+
+                <div class="tab-pane fade" id="pills-dessert" role="tabpanel" aria-labelledby="pills-dessert-tab">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Tiramisu</h2>
+                                    <p>
+
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>3,50€</p>
+                                </div>
+                            </div>
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Mousse au chocolat</h2>
+                                    <p>
+
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>3,50€</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Fondant au chocolat</h2>
+                                    <p>
+
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>3,50€</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section coordonnées -->
+
+    <section class="coordonnes">
+
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
