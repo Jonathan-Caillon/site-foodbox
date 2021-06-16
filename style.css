@@ -6,11 +6,17 @@
     --color-red: #ec407a;
     --color-grey:#404044;
     --color-black: #212529;
+    --color-green: #4caf50;
 }
 
 h1 {
     font-size: 32px;
     margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    color: var(--color-black);
 }
 
 /* Section accueil */
@@ -19,8 +25,10 @@ h1 {
     background-image: linear-gradient(to right,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(./images/accueil.jpg);
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,11 +85,11 @@ h1 {
 
 /* Section Présentation */
 
-.presentation {
+#presentation {
     padding: 100px 0;
 }
 
-.presentation p{
+#presentation p{
     color: var(--color-grey);
 }
 
@@ -90,7 +98,7 @@ h1 {
     display: flex;
 }
 
-.presentation img {
+#presentation img {
     width: 100%;
     box-shadow: var(--box-shad)
 }
@@ -101,12 +109,12 @@ h1 {
 
 /* Section Menu */
 
-.menu {
+#menu {
     background-color: var(--bg-dark-color);
     padding: 100px 0;
 }
 
-.menu h1 {
+#menu h1 {
     text-align: center;
 }
 
@@ -165,10 +173,6 @@ h1 {
     font-weight: bold;
 }
 
-.txtproduits h2{
-    font-size: 20px;
-    color: var(--color-black);
-}
 
 .txtproduits p{
     color: var(--color-grey);
@@ -202,4 +206,70 @@ h1 {
     .imgproduits {
         margin: 5px 0;
     }
+}
+
+/* Section Galerie photos */
+
+.galerie {
+    padding: 100px 0;
+}
+
+.galerie img {
+    width: 100%;
+    height: 300px;
+    margin: 25px 0;
+    box-shadow: var(--box-shad);
+    object-fit: cover;
+    object-position: center;
+}
+
+.txtgalerie {
+    position: relative;
+    z-index: 5;
+    transition: 0.4s;
+}
+
+.hoverGalerie {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.txtgalerie:hover .hoverGalerie{
+    opacity: 1;
+}
+
+.txtgalerie:hover img{
+    opacity: 0.3;
+}
+
+.txtgalerie:hover {
+    transform: scale(1.1);
+}
+
+.galerie h1 {
+    text-align: center;
+}
+
+/* Section coordonnées */
+
+.coordonnes {
+    padding: 100px 0;
+    background-color: var(--bg-dark-color);
+}
+
+.txtcontact {
+    min-height: 100px;
+}
+
+.txtcontact svg:hover{
+    fill: var(--color-green);
+}
+
+.coordonnes iframe {
+    width: 100%;
+    height: 400px;
 }
