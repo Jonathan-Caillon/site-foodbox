@@ -3,9 +3,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <script type="text/javascript" src="tarteaucitron.js-1.9.1/tarteaucitron.js"></script>
+
+    <script type="text/javascript">
+    tarteaucitron.init({
+      "privacyUrl": "", /* Privacy policy url */
+
+      "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+      "cookieName": "tarteaucitron", /* Cookie name */
+
+      "orientation": "middle", /* Banner position (top - bottom) */
+   
+      "groupServices": false, /* Group services by category */
+                       
+      "showAlertSmall": false, /* Show the small banner on bottom right */
+      "cookieslist": false, /* Show the cookie list */
+                       
+      "closePopup": true, /* Show a close X on the banner */
+
+      "showIcon": true, /* Show cookie icon to manage cookies */
+      //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
+      "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
+
+      "adblocker": false, /* Show a Warning if an adblocker is detected */
+                       
+      "DenyAllCta" : true, /* Show the deny all button */
+      "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+      "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+                       
+      "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+
+      "removeCredit": false, /* Remove credit link */
+      "moreInfoLink": false, /* Show more info link */
+
+      "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+      "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+
+      //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+                      
+      "readmoreLink": "", /* Change the default readmore link */
+
+      "mandatory": false, /* Show a message about mandatory cookies */
+
+      
+    });
+    (tarteaucitron.job = tarteaucitron.job || []).push('facebook');
+
+    (tarteaucitron.job = tarteaucitron.job || []).push('GoogleMapsPerso');
+
+
+    tarteaucitron.services.GoogleMapsPerso = {
+    "key": "GoogleMapsPerso",
+    "type": "api",
+    "name": "GoogleMaps",
+    "uri": "https://policies.google.com/privacy",
+    "needConsent": true,
+    "cookies": [1],
+    "js": function () {
+    "use strict";
+    tarteaucitron.fallback(['GoogleMapsPerso'], function (x) {
+    return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.834549623888!2d5.339386715831273!3d45.95458860860775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b518a39dc7bfd%3A0x92334e4f0abbc1bf!2s12%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1624015786299!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+    });
+    },
+    "fallback": function () {
+    "use strict";
+    var id = 'GoogleMapsPerso';
+    tarteaucitron.fallback(['GoogleMapsPerso'], function (elem) {
+    return tarteaucitron.engage(id);
+    });
+    }
+    };
+
+    
+    </script>
+
+
+
     <!-- CSS only -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <title>La FoodBox</title>
@@ -15,18 +93,24 @@
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">FoodBox</a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
+                    <a title="Accueil" class="navbar-brand" href="#accueil">FoodBox</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a title="Présentation" class="nav-link" href="#presentation">Présentation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Nos menus" class="nav-link" href="#menu">Menus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Galerie photos" class="nav-link" href="#galerie">Galerie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Nous contacter" class="nav-link" href="#coordonnes">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -34,11 +118,11 @@
 
     <!-- Image d'acceuil -->
 
-    <section class="accueil">
+    <section id="accueil">
         <div>
             <p>Bienvenue chez la FoodBox</p>
         </div>
-        <a href="#presentation" class="middle">
+        <a title="Présentation" href="#presentation" class="middle">
             <div class="mouse">
           
             </div>
@@ -399,57 +483,171 @@
 
     <!-- Section Galerie Photos -->
 
-    <section class="galerie">
+    <section id="galerie">
         <div class="container">
             <h1>Galerie photos</h1>
             <div class="row">
                 <div class="col-12 col-lg-4">
-                    <div class="txtgalerie">
-                        <img src="./images/accueil.jpg" alt="">
-                        <div class="hoverGalerie">
-                            <p>Superbe Image</p>
+                    <!-- Button trigger modal -->
+                    <div class="contentGalerie">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal1" class="txtgalerie">
+                            <img class="imgGalerie" src="./images/accueil.jpg" alt="">
+                            <div class="hoverGalerie">
+                                <p>Superbe Image</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="imgModal" src="./images/accueil.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="txtgalerie">
-                        <img src="./images/accueil.jpg" alt="">
-                        <div class="hoverGalerie">
-                            <p>Superbe Image</p>
+                    <!-- Button trigger modal -->
+                    <div class="contentGalerie">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal2" class="txtgalerie">
+                            <img class="imgGalerie" src="./images/accueil.jpg" alt="">
+                            <div class="hoverGalerie">
+                                <p>Superbe Image</p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="imgModal" src="./images/accueil.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="txtgalerie">
-                        <img src="./images/accueil.jpg" alt="">
-                        <div class="hoverGalerie">
-                            <p>Superbe Image</p>
+                    <!-- Button trigger modal -->
+
+                    <div class="contentGalerie">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal3" class="txtgalerie">
+                            <img class="imgGalerie" src="./images/accueil.jpg" alt="">
+                            <div class="hoverGalerie">
+                                <p>Superbe Image</p>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="imgModal" src="./images/accueil.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-4">
-                    <div class="txtgalerie">
-                        <img src="./images/accueil.jpg" alt="">
-                        <div class="hoverGalerie">
-                            <p>Superbe Image</p>
+                    <!-- Button trigger modal -->
+
+                    <div class="contentGalerie">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal4" class="txtgalerie">
+                            <img class="imgGalerie" src="./images/accueil.jpg" alt="">
+                            <div class="hoverGalerie">
+                                <p>Superbe Image</p>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="imgModal" src="./images/accueil.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="txtgalerie">
-                        <img src="./images/accueil.jpg" alt="">
-                        <div class="hoverGalerie">
-                            <p>Superbe Image</p>
+                    <!-- Button trigger modal -->
+
+                    <div class="contentGalerie">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal5" class="txtgalerie">
+                            <img class="imgGalerie" src="./images/accueil.jpg" alt="">
+                            <div class="hoverGalerie">
+                                <p>Superbe Image</p>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="imgModal" src="./images/accueil.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                    <div class="txtgalerie">
-                        <img src="./images/accueil.jpg" alt="">
-                        <div class="hoverGalerie">
-                            <p>Superbe Image</p>
+                    <!-- Button trigger modal -->
+
+                    <div class="contentGalerie">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal6" class="txtgalerie">
+                            <img class="imgGalerie" src="./images/accueil.jpg" alt="">
+                            <div class="hoverGalerie">
+                                <p>Superbe Image</p>
+                            </div>
+                        </a>
+                    </div>
+
+                
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="imgModal" src="./images/accueil.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -459,49 +657,61 @@
 
     <!-- Section coordonnées -->
 
-    <section class="coordonnes">
+    <section id="coordonnes">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <h1>Nous contacter</h1>
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="txtcontact">
-                                <h2>Horaires d'ouverture :</h2>
-                                <p>
-                                    Du Mardu au Dimanche de 11h à 22h
-                                </p>
+                    <div class="content-contact">
+                        <h1>Nous contacter</h1>
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="txtcontact">
+                                    <h2>Horaires d'ouverture :</h2>
+                                    <p>
+                                        Du Mardu au Dimanche de 11h à 22h
+                                    </p>
+                                </div>
+                                <div class="txtcontact">
+                                    <h2>Téléphone :</h2>
+                                    <p>
+                                        07 86 61 70 64
+                                    </p>
+                                </div>
                             </div>
-                            <div class="txtcontact">
-                                <h2>Téléphone :</h2>
-                                <p>
-                                    07 86 61 70 64
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="txtcontact">
-                                <h2>Adresse :</h2>
-                                <p>
-                                    12 Avenue Général Sarrail <br>
-                                    01500 Ambérieu-en-Bugey
-                                </p>
-                            </div>
-                            <div class="txtcontact">
-                                <h2>Réseaux sociaux :</h2>
-                                <a href="https://fr-fr.facebook.com/pages/category/Restaurant/Food-Box-998361743547413/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-                                </a>
+                            <div class="col-12 col-lg-6">
+                                <div class="txtcontact">
+                                    <h2>Adresse :</h2>
+                                    <p>
+                                        12 Avenue Général Sarrail <br>
+                                        01500 Ambérieu-en-Bugey
+                                    </p>
+                                </div>
+                                <div class="txtcontact">
+                                    <h2>Réseaux sociaux :</h2>
+                                    <a title="Page Facebook FoodBox" rel="noopener noreferrer" target="_blank" href="https://fr-fr.facebook.com/pages/category/Restaurant/Food-Box-998361743547413/">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 col-lg-6">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.834549623888!2d5.339386715831273!3d45.95458860860775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b518a39dc7bfd%3A0x92334e4f0abbc1bf!2s12%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1623850497186!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="GoogleMapsPerso">
+
+                    </div>
+                    <div class="fb-like" data-layout="standard" data-action="like" data-share="true"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <a title="Mentions légales" href="#">Mentions légales</a>
+    </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
