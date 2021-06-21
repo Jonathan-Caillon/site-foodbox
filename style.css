@@ -99,6 +99,13 @@ body {
     }
 }
 
+@media (max-width: 991px) {
+    #accueil p {
+        font-size: 50px;
+
+    }
+}
+
 
 /* Section Présentation */
 
@@ -147,7 +154,7 @@ body {
     border-style: none;
     margin: 0 10px;
     box-shadow: var(--box-shad);
-    padding: 24px 20px;
+    padding: 24px 24px;
     color: var(--color-black);
     background-color: var(--color-red);
     font-size: 18px;
@@ -357,15 +364,27 @@ body {
 #footer {
     background-color: var(--color-black);
     padding: 40px 0;
+
+}
+
+.mentions {
     text-align: center;
 }
 
-#footer a {
+.mentions button {
     text-decoration: none;
     color: var(--bg-dark-color);
+    background:none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.mentions button:hover {
+    color: var(--color-red);
 
 }
 
-#footer a:hover {
-    color: var(--color-red);
+
+#footer span {
+    font-weight: bold;
 }

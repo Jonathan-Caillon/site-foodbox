@@ -3,7 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Restaurant La Food Box à Ambérieu-en-Bugey">
+    <meta name="keywords" content="La Food Box Ambérieu-en-Bugey, La Food Box, FoodBox, Restaurant Ambérieu-en-Bugey, Restaurant amberieu, La FoodBox, Restaurant gare amberieu, sandwich, pates, nourriture orientale, desserts, gare sncf amberieu restaurant, restaurant terrasse, restaurant terrasse amberieu, Ambérieu-en-Bugey">
+
 
     <script type="text/javascript" src="tarteaucitron.js-1.9.1/tarteaucitron.js"></script>
 
@@ -19,7 +21,7 @@
       "groupServices": false, /* Group services by category */
                        
       "showAlertSmall": false, /* Show the small banner on bottom right */
-      "cookieslist": false, /* Show the cookie list */
+      "cookieslist": true, /* Show the cookie list */
                        
       "closePopup": true, /* Show a close X on the banner */
 
@@ -36,7 +38,7 @@
       "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
 
       "removeCredit": false, /* Remove credit link */
-      "moreInfoLink": false, /* Show more info link */
+      "moreInfoLink": true, /* Show more info link */
 
       "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
       "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
@@ -49,31 +51,29 @@
 
       
     });
-    (tarteaucitron.job = tarteaucitron.job || []).push('facebook');
-
     (tarteaucitron.job = tarteaucitron.job || []).push('GoogleMapsPerso');
 
 
     tarteaucitron.services.GoogleMapsPerso = {
-    "key": "GoogleMapsPerso",
-    "type": "api",
-    "name": "GoogleMaps",
-    "uri": "https://policies.google.com/privacy",
-    "needConsent": true,
-    "cookies": [1],
-    "js": function () {
-    "use strict";
-    tarteaucitron.fallback(['GoogleMapsPerso'], function (x) {
-    return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.834549623888!2d5.339386715831273!3d45.95458860860775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b518a39dc7bfd%3A0x92334e4f0abbc1bf!2s12%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1624015786299!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
-    });
-    },
-    "fallback": function () {
-    "use strict";
-    var id = 'GoogleMapsPerso';
-    tarteaucitron.fallback(['GoogleMapsPerso'], function (elem) {
-    return tarteaucitron.engage(id);
-    });
-    }
+        "key": "GoogleMapsPerso",
+        "type": "api",
+        "name": "GoogleMaps",
+        "uri": "https://policies.google.com/privacy",
+        "needConsent": true,
+        "cookies": [1],
+        "js": function () {
+            "use strict";
+            tarteaucitron.fallback(['GoogleMapsPerso'], function (x) {
+                return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.834549623888!2d5.339386715831273!3d45.95458860860775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b518a39dc7bfd%3A0x92334e4f0abbc1bf!2s12%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1624015786299!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+            });
+        },
+        "fallback": function () {
+            "use strict";
+            var id = 'GoogleMapsPerso';
+            tarteaucitron.fallback(['GoogleMapsPerso'], function (elem) {
+                return tarteaucitron.engage(id);
+            });
+        }
     };
 
     
@@ -86,7 +86,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
-    <title>La FoodBox</title>
+    <title>La Food Box</title>
 </head>
 <body>
     <header>
@@ -701,7 +701,6 @@
                     <div class="GoogleMapsPerso">
 
                     </div>
-                    <div class="fb-like" data-layout="standard" data-action="like" data-share="true"></div>
                 </div>
             </div>
         </div>
@@ -710,7 +709,28 @@
     <!-- Footer -->
 
     <footer id="footer">
-        <a title="Mentions légales" href="#">Mentions légales</a>
+        <div class="container">
+            <div class="mentions">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Mentions Légales
+                  </button>
+            </div>
+
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                <span>Informations légales</span>  <br>
+                La Food Box <br>
+                Nom et prénoms <br>
+                12 Avenue Général Sarrail <br>
+                01500 Ambérieu-en-Bugey <br>
+                07 86 61 70 64 <br> 
+                Adresse de courrier électronique <br>
+                Numéro d'inscription au registre du commerce et des sociétés <br>
+                Numéro individuel d'identification fiscale <br><br>
+                Hébergeur <br>
+              </div>
+            </div>
+        </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
