@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Restaurant La Food Box à Ambérieu-en-Bugey">
-    <meta name="keywords" content="La Food Box Ambérieu-en-Bugey, La Food Box, FoodBox, Restaurant Ambérieu-en-Bugey, Restaurant amberieu, La FoodBox, Restaurant gare amberieu, sandwich, pates, nourriture orientale, desserts, gare sncf amberieu restaurant, restaurant terrasse, restaurant terrasse amberieu, Ambérieu-en-Bugey">
-
+    <meta name="description" content="Le restaurant La Food Box situé à Amberieu en Bugey (01) est un établissement de type Restauration rapide">
+    <meta name="keywords" content="La Food Box Ambérieu-en-Bugey, La Food Box, FoodBox, Restaurant Ambérieu-en-Bugey, Restaurant amberieu, La FoodBox, Restaurant gare amberieu, sandwich, pates, nourriture orientale, desserts, gare sncf amberieu restaurant, restaurant terrasse, restaurant terrasse amberieu, Ambérieu-en-Bugey,La Food Box Restauration Rapide,la food box amberieu en bugey, manger a la gare, manger en terrasse">
+    <link rel="icon" type="image/png" href="./images/favicon-fb.png" />
 
     <script type="text/javascript" src="tarteaucitron.js-1.9.1/tarteaucitron.js"></script>
 
@@ -64,7 +65,7 @@
         "js": function () {
             "use strict";
             tarteaucitron.fallback(['GoogleMapsPerso'], function (x) {
-                return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.834549623888!2d5.339386715831273!3d45.95458860860775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b518a39dc7bfd%3A0x92334e4f0abbc1bf!2s12%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1624015786299!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
+                return '<iframe title="Google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.834549623888!2d5.339386715831273!3d45.95458860860775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b518a39dc7bfd%3A0x92334e4f0abbc1bf!2s12%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1624015786299!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
             });
         },
         "fallback": function () {
@@ -96,7 +97,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a title="Accueil" class="navbar-brand" href="#accueil">FoodBox</a>
+                    <a title="Accueil" class="navbar-brand" href="#accueil">LaFoodBox</a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                         <a title="Présentation" class="nav-link" href="#presentation">Présentation</a>
@@ -120,7 +121,7 @@
 
     <section id="accueil">
         <div>
-            <p>Bienvenue chez la FoodBox</p>
+            <p>Bienvenue chez la Food Box</p>
         </div>
         <a title="Présentation" href="#presentation" class="middle">
             <div class="mouse">
@@ -140,7 +141,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="texte">
                         <div>
-                            <h1>Our chef cooks the most delicious food for you</h1>
+                            <h1>Notre chef cuisine pour vous les plats les plus délicieux</h1>
                             <p>
                                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
                                 <br><br>
@@ -157,7 +158,7 @@
 
     <section id="menu">
         <div class="container">
-            <h1>Discover Our Exclusive Menu</h1>
+            <h1>Découvrez notre menu</h1>
             <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="pills-entrees-tab" data-bs-toggle="pill" data-bs-target="#pills-entrees" type="button" role="tab" aria-controls="pills-entrees" aria-selected="true">Entrées</button>
@@ -357,7 +358,30 @@
                                     <p>
                                         Veau ou Poulet ou Agneau <br>+ Accompagnement riz ou Pomme de terre ou Semoule
                                         <br>
-                                        <span>Supplément viande 2€</span>
+                                        <span>Supplément viande 2€
+                                            <br>
+                                            Pour veau ou agneau commander 24h avant
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="prix">
+                                    <p>13€</p>
+                                </div>
+                            </div>
+                            <div class="produits">
+                                <div>
+                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                </div>
+                                <div class="txtproduits">
+                                    <h2>Autres sur commande 24h avant</h2>
+                                    <p>
+                                        Pain maison nature ou farcie
+                                        <br>
+                                        Patisseries orientales (sablés, grewechs, makrout...)
+                                        <br>
+                                        Msemens nature ou farcie
+                                        <br>
+                                        Besses
                                     </p>
                                 </div>
                                 <div class="prix">
@@ -490,7 +514,7 @@
                 <div class="col-12 col-lg-4">
                     <!-- Button trigger modal -->
                     <div class="contentGalerie">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal1" class="txtgalerie">
+                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="txtgalerie">
                             <img class="imgGalerie" src="./images/accueil.jpg" alt="">
                             <div class="hoverGalerie">
                                 <p>Superbe Image</p>
@@ -517,7 +541,7 @@
                 <div class="col-12 col-lg-4">
                     <!-- Button trigger modal -->
                     <div class="contentGalerie">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal2" class="txtgalerie">
+                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="txtgalerie">
                             <img class="imgGalerie" src="./images/accueil.jpg" alt="">
                             <div class="hoverGalerie">
                                 <p>Superbe Image</p>
@@ -545,7 +569,7 @@
                     <!-- Button trigger modal -->
 
                     <div class="contentGalerie">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal3" class="txtgalerie">
+                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="txtgalerie">
                             <img class="imgGalerie" src="./images/accueil.jpg" alt="">
                             <div class="hoverGalerie">
                                 <p>Superbe Image</p>
@@ -574,7 +598,7 @@
                     <!-- Button trigger modal -->
 
                     <div class="contentGalerie">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal4" class="txtgalerie">
+                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="txtgalerie">
                             <img class="imgGalerie" src="./images/accueil.jpg" alt="">
                             <div class="hoverGalerie">
                                 <p>Superbe Image</p>
@@ -601,7 +625,7 @@
                     <!-- Button trigger modal -->
 
                     <div class="contentGalerie">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal5" class="txtgalerie">
+                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="txtgalerie">
                             <img class="imgGalerie" src="./images/accueil.jpg" alt="">
                             <div class="hoverGalerie">
                                 <p>Superbe Image</p>
@@ -628,7 +652,7 @@
                     <!-- Button trigger modal -->
 
                     <div class="contentGalerie">
-                        <a data-bs-toggle="modal" data-bs-target="#exampleModal6" class="txtgalerie">
+                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal6" class="txtgalerie">
                             <img class="imgGalerie" src="./images/accueil.jpg" alt="">
                             <div class="hoverGalerie">
                                 <p>Superbe Image</p>
@@ -655,6 +679,9 @@
         </div>
     </section>
 
+    <!-- Section avis -->
+
+
     <!-- Section coordonnées -->
 
     <section id="coordonnes">
@@ -668,7 +695,8 @@
                                 <div class="txtcontact">
                                     <h2>Horaires d'ouverture :</h2>
                                     <p>
-                                        Du Mardu au Dimanche de 11h à 22h
+                                        Du Mardu au Dimanche de 11h à 21h* <br>
+                                        <span>*Les horaires peuvent varier, renseignez-vous par téléphone</span>
                                     </p>
                                 </div>
                                 <div class="txtcontact">
@@ -710,7 +738,15 @@
 
     <footer id="footer">
         <div class="container">
+            <div class="google">
+                <a  title="Page avis google" rel="noopener noreferrer" target="_blank" href="https://www.google.com/search?q=la+food+box&source=hp&ei=O6LQYK7DA_yPjLsPpu6EgAg&iflsig=AINFCbYAAAAAYNCwS3464rp9leNwoXvPi-_EpI2-E3hp&gs_ssp=eJzj4tVP1zc0TDPJSalIK8gxYLRSNagwMbdIMjW0SDQ2N08xN7JIsgIKpaQkGyRbpJhappiaGxgZeXHnJCqk5eenKCTlVwAAgVMTPA&oq=la+foo&gs_lcp=Cgdnd3Mtd2l6EAEYAzIECAAQQzICCAAyCAguEMcBEK8BMgoILhDHARCvARBDMgoIABCxAxCDARAKMggILhDHARCvATICCAAyAggAMgQIABAKMgQIABAKOggIABCxAxCDAToECC4QQzoOCC4QsQMQxwEQowIQkwI6BQgAELEDOgsILhCxAxDHARCjAjoOCC4QsQMQgwEQxwEQowI6AgguOggILhDHARCjAjoLCAAQsQMQgwEQyQNQ2RxY9zBgpztoAnAAeACAAagDiAGcEpIBBzItMi40LjGYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=gws-wiz#lrd=0x478b518a377d728b:0x4ddc0c8d59d57022,1,,,&wptab=s:H4sIAAAAAAAAAONgVuLVT9c3NEwzyUmpSCvIecTozS3w8sc9YSmnSWtOXmO04eIKzsgvd80rySypFNLjYoOyVLgEpVB1ajBI8XOhCvHsYuL3yU9OzAnIzwxKLctMLS9exGqek6iQlp-fopCUX6FQlFpcklhalFiSmZ-nUJRYkJmSqpCYm3R4ZVFmaqluap5uUml6aqVCYllmMQAhBafiqwAAAA">
+                    <p>Avis google</p>
+                    <img src="./images/etoiles.jpg" alt="">
+                </a>
+            </div>
+
             <div class="mentions">
+
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     Mentions Légales
                   </button>
@@ -719,15 +755,17 @@
             <div class="collapse" id="collapseExample">
               <div class="card card-body">
                 <span>Informations légales</span>  <br>
-                La Food Box <br>
-                Nom et prénoms <br>
-                12 Avenue Général Sarrail <br>
-                01500 Ambérieu-en-Bugey <br>
-                07 86 61 70 64 <br> 
-                Adresse de courrier électronique <br>
-                Numéro d'inscription au registre du commerce et des sociétés <br>
-                Numéro individuel d'identification fiscale <br><br>
-                Hébergeur <br>
+                LaFoodBox.fr <br>
+                TEBIBI Nora <br>
+                Adresse: 12 Avenue Général Sarrail, 01500 Ambérieu-en-Bugey<br>
+                Téléphone: 07 86 61 70 64 <br> 
+                Mail: nora01500@gmail.com <br>
+                Numéro RCS: Bourg-en-Bresse A 811 624 642 <br>
+                Siret 811 624 642 00013 <br>
+                APE 5610 C <br><br>
+                <span>Hébergeur</span> <br>
+
+
               </div>
             </div>
         </div>

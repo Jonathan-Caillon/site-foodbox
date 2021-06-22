@@ -1,7 +1,7 @@
 :root {
     --bg-color: #f8f9fa;
     --txt-light-color: #f8f9fa;
-    --bg-dark-color:#EEEEEE;
+    --bg-dark-color:#e0e0e0;
     --box-shad: 0px 4px 18px -12px rgb(0 0 0 / 75%);
     --color-red: #ec407a;
     --color-grey:#404044;
@@ -189,7 +189,7 @@ body {
 
 .produits:hover {
     background-color: var(--color-light-red);
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .imgproduits {
@@ -295,7 +295,7 @@ body {
 }
 
 .contentGalerie:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 #galerie h1 {
@@ -325,7 +325,26 @@ body {
     border: none;
 }
 
+/* Section avis */
 
+#avis {
+    padding: 80px 0;
+    background-color: var(--bg-dark-color);
+}
+
+#avis h1 {
+    text-align: center;
+}
+
+.content-avis {
+    display: flex;
+    justify-content: center;
+}
+
+.body-avis {
+    width: 310px;
+    height: 180px;
+}
 
 /* Section coordonnées */
 
@@ -335,7 +354,12 @@ body {
 }
 
 .txtcontact {
-    min-height: 100px;
+    min-height: 150px;
+}
+
+.txtcontact span{
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .txtcontact svg{
@@ -364,8 +388,42 @@ body {
 #footer {
     background-color: var(--color-black);
     padding: 40px 0;
-
 }
+
+.google {
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.google a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+.google p {
+    margin-bottom: 8px;
+}
+
+.google a:hover {
+    color: var(--color-light-red);
+}
+
+.google img {
+    border-radius: 8px;
+    opacity: 0.8;
+    transition: 0.2s;
+    width: auto;
+    height: auto;
+}
+
+.google img:hover {
+    opacity: 1;
+}
+
 
 .mentions {
     text-align: center;
@@ -387,4 +445,5 @@ body {
 
 #footer span {
     font-weight: bold;
+    font-size: 20px;
 }
