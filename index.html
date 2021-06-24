@@ -4,81 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, nofollow" />
     <meta name="description" content="Le restaurant La Food Box situé à Amberieu en Bugey (01) est un établissement de type Restauration rapide">
     <meta name="keywords" content="La Food Box Ambérieu-en-Bugey, La Food Box, FoodBox, Restaurant Ambérieu-en-Bugey, Restaurant amberieu, La FoodBox, Restaurant gare amberieu, sandwich, pates, nourriture orientale, desserts, gare sncf amberieu restaurant, restaurant terrasse, restaurant terrasse amberieu, Ambérieu-en-Bugey,La Food Box Restauration Rapide,la food box amberieu en bugey, manger a la gare, manger en terrasse">
     <link rel="icon" type="image/png" href="./images/favicon-fb.png" />
 
-    <script type="text/javascript" src="tarteaucitron.js-1.9.1/tarteaucitron.js"></script>
+    <script type="text/javascript" src="./tarteaucitron.js-1.9.1/tarteaucitron.js"></script>
 
-    <script type="text/javascript">
-    tarteaucitron.init({
-      "privacyUrl": "", /* Privacy policy url */
-
-      "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
-      "cookieName": "tarteaucitron", /* Cookie name */
-
-      "orientation": "middle", /* Banner position (top - bottom) */
-   
-      "groupServices": false, /* Group services by category */
-                       
-      "showAlertSmall": false, /* Show the small banner on bottom right */
-      "cookieslist": true, /* Show the cookie list */
-                       
-      "closePopup": true, /* Show a close X on the banner */
-
-      "showIcon": true, /* Show cookie icon to manage cookies */
-      //"iconSrc": "", /* Optionnal: URL or base64 encoded image */
-      "iconPosition": "BottomRight", /* BottomRight, BottomLeft, TopRight and TopLeft */
-
-      "adblocker": false, /* Show a Warning if an adblocker is detected */
-                       
-      "DenyAllCta" : true, /* Show the deny all button */
-      "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
-      "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
-                       
-      "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
-
-      "removeCredit": false, /* Remove credit link */
-      "moreInfoLink": true, /* Show more info link */
-
-      "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
-      "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
-
-      //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
-                      
-      "readmoreLink": "", /* Change the default readmore link */
-
-      "mandatory": false, /* Show a message about mandatory cookies */
-
-      
-    });
-    (tarteaucitron.job = tarteaucitron.job || []).push('GoogleMapsPerso');
-
-
-    tarteaucitron.services.GoogleMapsPerso = {
-        "key": "GoogleMapsPerso",
-        "type": "api",
-        "name": "GoogleMaps",
-        "uri": "https://policies.google.com/privacy",
-        "needConsent": true,
-        "cookies": [1],
-        "js": function () {
-            "use strict";
-            tarteaucitron.fallback(['GoogleMapsPerso'], function (x) {
-                return '<iframe title="Google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.834549623888!2d5.339386715831273!3d45.95458860860775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b518a39dc7bfd%3A0x92334e4f0abbc1bf!2s12%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1624015786299!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
-            });
-        },
-        "fallback": function () {
-            "use strict";
-            var id = 'GoogleMapsPerso';
-            tarteaucitron.fallback(['GoogleMapsPerso'], function (elem) {
-                return tarteaucitron.engage(id);
-            });
-        }
-    };
-
-    
-    </script>
+    <script type="text/javascript" src="./app.js"></script>
 
 
 
@@ -97,7 +30,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a title="Accueil" class="navbar-brand" href="#accueil">LaFoodBox</a>
+                    <a title="Accueil" class="navbar-brand" href="#accueil"><img class="logo" src="./images/logo.png" alt=""></a>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                         <a title="Présentation" class="nav-link" href="#presentation">Présentation</a>
@@ -136,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 preimage">
-                    <img src="./images/accueil.jpg" alt="">
+                    <img class="devanture" src="./images/devanture.jpg" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="texte">
@@ -185,7 +118,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/salade.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Salade maison</h2>
@@ -201,7 +134,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/saladeBrick.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Big brick</h2>
@@ -224,7 +157,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/bolognaise.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Bolognaise</h2>
@@ -238,7 +171,7 @@
                             </div>
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/fermiere.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>La Fermière</h2>
@@ -252,7 +185,7 @@
                             </div>
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/pates.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>La Végétarienne</h2>
@@ -268,7 +201,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/pates.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Sauce Bleu</h2>
@@ -282,7 +215,7 @@
                             </div>
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/pates.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Le Thonno</h2>
@@ -296,7 +229,7 @@
                             </div>
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/pates.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>La Pesto</h2>
@@ -319,14 +252,17 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/couscous.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Couscous</h2>
                                     <p>
-                                        Poulet ou Agneau ou Boeuf
+                                        Poulet ou Agneau ou Boeuf ou Veau
                                         <br>
-                                        <span>Supplément viande 2€</span>
+                                        <span>Supplément viande 2€
+                                            <br>
+                                            Pour Agneau ou Veau commander 24h avant
+                                        </span>
                                     </p>
                                 </div>
                                 <div class="prix">
@@ -335,7 +271,7 @@
                             </div>
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/chorba.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Chorba</h2>
@@ -351,7 +287,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/tajine.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Tajine</h2>
@@ -370,7 +306,7 @@
                             </div>
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/patisseries.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Autres sur commande 24h avant</h2>
@@ -385,7 +321,7 @@
                                     </p>
                                 </div>
                                 <div class="prix">
-                                    <p>13€</p>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
@@ -399,7 +335,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/fricasse.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Fricassé</h2>
@@ -415,7 +351,7 @@
                             </div>
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/burger.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Cheeseburger</h2>
@@ -431,7 +367,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/panini.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Panini</h2>
@@ -456,7 +392,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/dessert.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Tiramisu</h2>
@@ -470,7 +406,7 @@
                             </div>
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/dessert.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Mousse au chocolat</h2>
@@ -486,7 +422,7 @@
                         <div class="col-12 col-lg-6">
                             <div class="produits">
                                 <div>
-                                    <img class="imgproduits" src="./images/accueil.jpg" alt=""> 
+                                    <img class="imgproduits" src="./images/dessert.jpg" alt=""> 
                                 </div>
                                 <div class="txtproduits">
                                     <h2>Fondant au chocolat</h2>

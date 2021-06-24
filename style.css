@@ -122,6 +122,12 @@ body {
     display: flex;
 }
 
+.devanture {
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+}
+
 #presentation img {
     width: 100%;
     box-shadow: var(--box-shad)
@@ -129,6 +135,11 @@ body {
 
 .texte div {
     max-width: 500px;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
 }
 
 @media (max-width: 991px) {
@@ -415,7 +426,6 @@ body {
 .google img {
     border-radius: 8px;
     opacity: 0.8;
-    transition: 0.2s;
     width: auto;
     height: auto;
 }
