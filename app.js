@@ -39,6 +39,7 @@ tarteaucitron.init({
 
     
   });
+
   (tarteaucitron.job = tarteaucitron.job || []).push('GoogleMapsPerso');
 
 
@@ -53,13 +54,23 @@ tarteaucitron.init({
           "use strict";
           tarteaucitron.fallback(['GoogleMapsPerso'], function (x) {
               return '<iframe title="Google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2773.834549623888!2d5.339386715831273!3d45.95458860860775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b518a39dc7bfd%3A0x92334e4f0abbc1bf!2s12%20Avenue%20du%20G%C3%A9n%C3%A9ral%20Sarrail%2C%2001500%20Amb%C3%A9rieu-en-Bugey!5e0!3m2!1sfr!2sfr!4v1624015786299!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>';
-          });
-      },
+        });
+    },
       "fallback": function () {
           "use strict";
           var id = 'GoogleMapsPerso';
           tarteaucitron.fallback(['GoogleMapsPerso'], function (elem) {
               return tarteaucitron.engage(id);
-          });
-      }
-  };
+        });
+    }  
+};
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-QLEW4LKL4H');
+
+tarteaucitron.user.gtagUa = 'G-QLEW4LKL4H';
+
+(tarteaucitron.job = tarteaucitron.job || []).push('gtag');
