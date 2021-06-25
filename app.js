@@ -65,12 +65,6 @@ tarteaucitron.init({
     }  
 };
 
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-QLEW4LKL4H');
-
 tarteaucitron.user.gtagUa = 'G-QLEW4LKL4H';
 
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
