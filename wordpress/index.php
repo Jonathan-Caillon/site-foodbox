@@ -1,5 +1,5 @@
 <?php
-header('location: https://www.la-food-box.fr/');
+
 
 /**
  * Front to the WordPress application. This file doesn't do anything, but loads
