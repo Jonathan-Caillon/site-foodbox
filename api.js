@@ -4,7 +4,11 @@ let galerie = document.getElementById("galeriePhotos");
 
 document.addEventListener("DOMContentLoaded", function () {
   let xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "http://localhost/foodbox/wordpress/wp-json/wp/v2/galerie?_embed", true);
+  xhttp.open(
+    "GET",
+    "https://www.la-food-box.fr/wordpress/wp-json/wp/v2/galerie?_embed",
+    true
+  );
   xhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
