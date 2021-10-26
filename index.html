@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -32,13 +33,13 @@
     <!-- CSS only -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    <link rel="stylesheet" href="./style.css">
     <title>La Food Box</title>
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -82,10 +83,10 @@
     <section id="presentation">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 preimage">
+                <div class="col-12 col-md-6 preimage">
                     <img class="devanture" src="./images/devanture.jpg" alt="">
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-md-6">
                     <div class="texte">
                         <div>
                             <h1>Notre chef vous prépare les plats les plus délicieux</h1>
@@ -133,327 +134,40 @@
                 <!-- Menu entrées -->
 
                 <div class="tab-pane fade show active" id="pills-entrees" role="tabpanel" aria-labelledby="pills-entrees-tab">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/salade.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Salade maison</h2>
-                                    <p>
-                                        Au gré du jours...
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>5€</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/saladeBrick.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Big brick</h2>
-                                    <p>
-                                        Accompagnée d'une salade
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>6,50€</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="menuEntrees" class="row">
+
                     </div>
                 </div>
 
                 <!-- Menu pâtes -->
 
                 <div class="tab-pane fade" id="pills-pates" role="tabpanel" aria-labelledby="pills-pates-tab">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/bolognaise.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Bolognaise</h2>
-                                    <p>
-                                        Haché de boeuf, tomate, oignon, basilic
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>8,50€</p>
-                                </div>
-                            </div>
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/fermiere.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>La Fermière</h2>
-                                    <p>
-                                        Poulet, crème fraîche, oignon, champignon
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>8,50€</p>
-                                </div>
-                            </div>
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/pates.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>La Végétarienne</h2>
-                                    <p>
-                                        Au gré des saisons
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>8,50€</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/pates.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Sauce Bleu</h2>
-                                    <p>
-                                        Crème fraîche, bleu
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>8,50€</p>
-                                </div>
-                            </div>
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/pates.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Le Thonno</h2>
-                                    <p>
-                                        Thon, sauce tomate, oignon, olive
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>8,50€</p>
-                                </div>
-                            </div>
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/pates.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>La Pesto</h2>
-                                    <p>
-                                        Oignon, basilic, huile d'olive
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>8,50€</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="menuPates" class="row">
+
                     </div>
                 </div>
 
                 <!-- Menu spécialitées -->
 
                 <div class="tab-pane fade" id="pills-specialites" role="tabpanel" aria-labelledby="pills-specialites-tab">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/couscous.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Couscous</h2>
-                                    <p>
-                                        Poulet ou Agneau ou Boeuf ou Veau
-                                        <br>
-                                        <span>Supplément viande 2€
-                                            <br>
-                                            Pour Agneau ou Veau commander 24h avant
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>13€</p>
-                                </div>
-                            </div>
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/chorba2.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Chorba</h2>
-                                    <p>
-                                        Accompagnée de son pain maison ou brick
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>13€</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/tajine.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Tajine</h2>
-                                    <p>
-                                        Veau ou Poulet ou Agneau <br>+ Accompagnement riz ou Pomme de terre ou Semoule
-                                        <br>
-                                        <span>Supplément viande 2€
-                                            <br>
-                                            Pour Agneau ou Veau commander 24h avant
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>13€</p>
-                                </div>
-                            </div>
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/patisseries2.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Autres sur commande 24h avant</h2>
-                                    <p>
-                                        Pain maison nature ou farcie
-                                        <br>
-                                        Pâtisseries orientales (sablés, grewechs, makrout...)
-                                        <br>
-                                        Msemens nature ou farcie
-                                        <br>
-                                        Mbesses
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="menuSpecialites" class="row">
+
                     </div>
                 </div>
 
                 <!-- Menu sandwich -->
 
                 <div class="tab-pane fade" id="pills-sandwich" role="tabpanel" aria-labelledby="pills-sandwich-tab">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/fricasse.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Fricassé</h2>
-                                    <p>
-                                        Thon, pomme de terre, olive verte, fromage
-                                        <br>
-                                        ou Viande hachée, fromage, salade
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>5€</p>
-                                </div>
-                            </div>
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/burger.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Cheeseburger</h2>
-                                    <p>
-                                        (sauces au choix)
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>4,50€</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/panini.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Panini</h2>
-                                    <p>
-                                        Fromage ou poulet ou steak
-                                        <br>
-                                        (sauces au choix)
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>5€</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div id="menuSandwichs" class="row">
+
                     </div>
                 </div>
 
                 <!-- Menu Désserts -->
 
                 <div class="tab-pane fade" id="pills-dessert" role="tabpanel" aria-labelledby="pills-dessert-tab">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/dessert.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Tiramisu</h2>
-                                    <p>
+                    <div id="menuDesserts" class="row">
 
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>3,50€</p>
-                                </div>
-                            </div>
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/dessert.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Mousse au chocolat</h2>
-                                    <p>
-
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>3,50€</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="produits">
-                                <div>
-                                    <img class="imgproduits" src="./images/dessert.jpg" alt=""> 
-                                </div>
-                                <div class="txtproduits">
-                                    <h2>Fondant au chocolat</h2>
-                                    <p>
-
-                                    </p>
-                                </div>
-                                <div class="prix">
-                                    <p>3,50€</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -465,177 +179,11 @@
     <section id="galerie">
         <div class="container">
             <h1>Galerie photos</h1>
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <!-- Button trigger modal -->
-                    <div class="contentGalerie">
-                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal1" class="txtgalerie">
-                            <img class="imgGalerie" src="./images/galerie1.jpg" alt="Accueil">
-                            <div class="hoverGalerie">
-                                <p>Accueil</p>
-                            </div>
-                        </a>
-                    </div>
+            <div id="galeriePhotos" class="row">
 
-
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="imgModal" src="./images/galerie1.jpg" alt="Accueil">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <!-- Button trigger modal -->
-                    <div class="contentGalerie">
-                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="txtgalerie">
-                            <img class="imgGalerie" src="./images/mbesses.jpg" alt="Mbesses">
-                            <div class="hoverGalerie">
-                                <p>Mbesses</p>
-                            </div>
-                        </a>
-                    </div>
-
-
-                    
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="imgModal" src="./images/mbesses.jpg" alt="Mbesses">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <!-- Button trigger modal -->
-
-                    <div class="contentGalerie">
-                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal3" class="txtgalerie">
-                            <img class="imgGalerie" src="./images/khobz.jpg" alt="Pain Khobz">
-                            <div class="hoverGalerie">
-                                <p>Pain Khobz</p>
-                            </div>
-                        </a>
-                    </div>
-
-                
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="imgModal" src="./images/khobz.jpg" alt="Pain Khobz">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <!-- Button trigger modal -->
-
-                    <div class="contentGalerie">
-                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal4" class="txtgalerie">
-                            <img class="imgGalerie" src="./images/patisseries2.jpg" alt="Pâtisseries orientales">
-                            <div class="hoverGalerie">
-                                <p>Pâtisseries orientales</p>
-                            </div>
-                        </a>
-                    </div>
-
-                
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="imgModal" src="./images/patisseries2.jpg" alt="Pâtisseries orientales">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <!-- Button trigger modal -->
-
-                    <div class="contentGalerie">
-                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal5" class="txtgalerie">
-                            <img class="imgGalerie" src="./images/tajine2.jpg" alt="Tajine">
-                            <div class="hoverGalerie">
-                                <p>Tajine</p>
-                            </div>
-                        </a>
-                    </div>
-
-                
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="imgModal" src="./images/tajine2.jpg" alt="Tajine">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <!-- Button trigger modal -->
-
-                    <div class="contentGalerie">
-                        <a href="#" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#exampleModal6" class="txtgalerie">
-                            <img class="imgGalerie" src="./images/chorba2.jpg" alt="Chorba">
-                            <div class="hoverGalerie">
-                                <p>Chorba</p>
-                            </div>
-                        </a>
-                    </div>
-
-                
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-xl">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <img class="imgModal" src="./images/chorba2.jpg" alt="Chorba">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-
-    <!-- Section avis -->
-
 
     <!-- Section coordonnées -->
 
@@ -650,7 +198,7 @@
                                 <div class="txtcontact">
                                     <h2>Horaires d'ouverture :</h2>
                                     <p>
-                                        Du Mardi au Dimanche de 11h à 21h* <br>
+                                        Du Mardi au Dimanche de 11h à 22h* <br>
                                         <span>*Les horaires peuvent varier, renseignez-vous par téléphone</span>
                                     </p>
                                 </div>
@@ -727,6 +275,7 @@
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="api.js"></script>
 </body>
 </html>

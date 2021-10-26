@@ -68,3 +68,5 @@ tarteaucitron.init({
 tarteaucitron.user.gtagUa = 'G-QLEW4LKL4H';
 
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+
+

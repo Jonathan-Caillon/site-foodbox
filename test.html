@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Section Menu -->
+
+    <section id="menu">
+        <div class="container">
+            <h1>Découvrez notre menu</h1>
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-entrees-tab" data-bs-toggle="pill" data-bs-target="#pills-entrees" type="button" role="tab" aria-controls="pills-entrees" aria-selected="true">Entrées</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-pates-tab" data-bs-toggle="pill" data-bs-target="#pills-pates" type="button" role="tab" aria-controls="pills-pates" aria-selected="false">Pâtes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-specialites-tab" data-bs-toggle="pill" data-bs-target="#pills-specialites" type="button" role="tab" aria-controls="pills-specialites" aria-selected="false">Spécialités</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-sandwich-tab" data-bs-toggle="pill" data-bs-target="#pills-sandwich" type="button" role="tab" aria-controls="pills-sandwich" aria-selected="false">Sandwichs</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-dessert-tab" data-bs-toggle="pill" data-bs-target="#pills-dessert" type="button" role="tab" aria-controls="pills-dessert" aria-selected="false">Désserts</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+
+                <!-- Menu entrées -->
+
+                <div class="tab-pane fade show active" id="pills-entrees" role="tabpanel" aria-labelledby="pills-entrees-tab">
+                    <div id="menuEntrees" class="row">
+
+                    </div>
+                </div>
+
+                <!-- Menu pâtes -->
+
+                <div class="tab-pane fade" id="pills-pates" role="tabpanel" aria-labelledby="pills-pates-tab">
+                    <div id="menuPates" class="row">
+
+                    </div>
+                </div>
+
+                <!-- Menu spécialitées -->
+
+                <div class="tab-pane fade" id="pills-specialites" role="tabpanel" aria-labelledby="pills-specialites-tab">
+                    <div id="menuSpecialites" class="row">
+
+                    </div>
+                </div>
+
+                <!-- Menu sandwich -->
+
+                <div class="tab-pane fade" id="pills-sandwich" role="tabpanel" aria-labelledby="pills-sandwich-tab">
+                    <div id="menuSandwichs" class="row">
+
+                    </div>
+                </div>
+
+                <!-- Menu Désserts -->
+
+                <div class="tab-pane fade" id="pills-dessert" role="tabpanel" aria-labelledby="pills-dessert-tab">
+                    <div id="menuDesserts" class="row">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="galerie">
+        <div class="container">
+            <h1>Galerie photos</h1>
+            <div id="galeriePhotos" class="row">
+
+            </div>
+
+        </div>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./api.js"></script>
+</body>
+</html>
